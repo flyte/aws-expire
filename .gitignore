@@ -1,1 +1,5 @@
 *.html
+.coverage
+.tox
+*.egg-info
+*.pyc
