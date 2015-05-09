@@ -11,5 +11,5 @@ def log_args(func):
         [arg_strs.append("%s=%s" % (k, v)) for k, v in kwargs.items()]
         msg = "%s(%s)" % (func.func_name, ", ".join(arg_strs))
         log.info("MOCK FUNCTION: %s" % msg)
-        func(*args, **kwargs)
+        return func(*args, **kwargs)
     return log_args_wrapper
