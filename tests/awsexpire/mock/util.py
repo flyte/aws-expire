@@ -3,6 +3,7 @@ log = logging.getLogger("mockboto")
 log.addHandler(logging.StreamHandler())
 log.setLevel(logging.DEBUG)
 
+
 def log_args(func):
     def log_args_wrapper(*args, **kwargs):
         arg_strs = []
